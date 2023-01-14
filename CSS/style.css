@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
+header {
+    position: absolute;
+}
+
+body {
+    background: url(../CONTENT/Background.svg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.LoaderBg {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+html,
+body,
+main,
+.wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+
+/* 
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+} */
+
+.path:hover {
+    stroke: #fff;
+    fill: white;
+    stroke-dasharray: 700;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+path {
+    stroke: #fff;
+    fill: white;
+    stroke-dasharray: 700;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 700;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 700;
+    }
+    90% {
+        fill: rgba(255, 255, 255, 0)
+    }
+    100% {
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 50px;
+    font-family: 'Spline Sans', sans-serif;
+}
+
+a:hover {
+    color: grey;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+}
+
+.contact {
+    background-color: #0e76a8;
+    height: 400px;
+}
+
+
+/* body {
+    background: url('https://j.gifs.com/qQZryk.gif') no-repeat center center fixed;
+    background-size: cover;
+} */
