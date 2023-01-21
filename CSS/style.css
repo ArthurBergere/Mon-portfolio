@@ -1,15 +1,17 @@
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
-header {
-    position: absolute;
+@font-face {
+    font-family: Indubitably;
+    src: url(../CONTENT/IndubitablyNF.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
 body {
-    background: url(../CONTENT/Background.svg) no-repeat;
+    background: url(../CONTENT/bg-retro.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
 }
@@ -22,24 +24,18 @@ body {
 
 html,
 body,
-main,
-.wrapper {
+main {
     height: 100%;
 }
 
-.wrapper {
-    height: 100%;
+nav {
+    font-family: Indubitably !important;
 }
 
-
-/* 
-.wrapper {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-} */
+.home {
+    text-align: center;
+    height: 100%;
+}
 
 .path:hover {
     stroke: #fff;
@@ -55,6 +51,35 @@ path {
     stroke-dasharray: 700;
     opacity: 10;
     animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+.wrapper svg {
+    margin-top: 15%;
+    height: 180px;
+}
+
+.btn-linkedin {
+    background: #0E76A8 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #084461 !important;
+}
+
+.ldn svg {
+    height: 25px;
+}
+
+.btn-linkedin:link,
+.btn-linkedin:visited {
+    color: #fff;
+}
+
+.btn-linkedin:active,
+.btn-linkedin:hover {
+    background: #084461 !important;
+    color: #fff !important;
 }
 
 @keyframes animate {
@@ -77,23 +102,6 @@ path {
     }
 }
 
-a {
-    font-size: 25px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    margin: 50px;
-    font-family: 'Spline Sans', sans-serif;
-}
-
-a:hover {
-    color: grey;
-}
-
-li {
-    display: inline;
-    list-style-type: none;
-}
-
 .contact {
     background-color: #0e76a8;
     height: 400px;
@@ -104,3 +112,66 @@ li {
     background: url('https://j.gifs.com/qQZryk.gif') no-repeat center center fixed;
     background-size: cover;
 } */
+
+.text-pop-up-top {
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
