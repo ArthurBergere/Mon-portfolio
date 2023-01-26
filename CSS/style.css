@@ -66,6 +66,14 @@ path {
     border-style: solid !important;
     border-color: #084461 !important;
 }
+.btn-github {
+    background: #1c1d1d !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #084461 !important;
+}
 
 .ldn svg {
     height: 25px;
@@ -82,6 +90,10 @@ path {
     color: #fff !important;
 }
 
+.btn-github:active,
+.btn-github:hover {
+    background: #262727 !important;
+}
 @keyframes animate {
     0% {
         opacity: 0;
