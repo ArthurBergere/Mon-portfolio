@@ -1,99 +1,56 @@
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
-    body {
-        background-color: rgb(10, 8, 8);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 35px solid yellow;
+    background-color: aliceblue;
+}
+
+.container {
+    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+@media (min-width: 1200px){
+    .container {
+    width: 1170px;
     }
-    
-    @font-face {
-        font-family: Indubitably;
-        src: url(../CONTENT/IndubitablyNF.otf);
-    }
-    
-    .card {
-        text-align: center;
-        width: 190px;
-        height: 254px;
-        background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-        border-radius: 20px;
-        transition: all .3s;
-    }
-    
-    .card2 {
-        width: 190px;
-        height: 254px;
-        background-color: #1a1a1a;
-        transition: all .2s;
-    }
-    
-    .card2 h1 {
-        font-size: 1.2rem;
-        max-width: 190px;
-    }
-    
-    .card2 img {
-        width: 80%;
-        height: auto;
-        border-radius: 20px;
-        max-width: 190px;
-        object-fit: cover;
-        font-family: IN;
-    }
-    
-    .card2:hover {
-        transform: scale(0.98);
-        border-radius: 20px;
-    }
-    
-    .card:hover {
-        box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-    }
-    /* .cardeu {
-        width: 190px;
-        height: 254px;
-        margin: 0 auto;
-        background-color: #F8FBFE;
-        border-radius: 8px;
-        z-index: 1;
-    }
-    
-    .tools {
-        display: flex;
-        align-items: center;
-        padding: 9px;
-    }
-    
-    .circle {
-        padding: 0 4px;
-    }
-    
-    .box {
-        display: inline-block;
-        align-items: center;
-        width: 10px;
-        height: 10px;
-        padding: 1px;
-        border-radius: 50%;
-    }
-    
-    .red {
-        background-color: #ff605c;
-    }
-    
-    .yellow {
-        background-color: #ffbd44;
-    }
-    
-    .green {
-        background-color: #00ca4e;
-    }
-    
-    .card__content {
-        width: 100%;
-    }
-    
-    .card__content img {
-        width: 80%;
-        border-radius: 20px;
-        max-width: 190px;
-        height: 50%;
-        object-fit: cover;
-    } */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: 3px 8px 6px 0px #828282;
+  }
+  .left-item {
+    float: left;
+  }
+  .middle-items {
+    display: flex;
+    justify-content: center;
+  }
+  .right-items {
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  a {
+    padding-left: 5px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #828282;
+  }
+  
+  
