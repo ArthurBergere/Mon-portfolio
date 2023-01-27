@@ -3,8 +3,13 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Gilbert;
+    src: url(../CONTENT/GilbertQualifiDemo.ttf);
+}
+
 body {
-    border: 35px solid yellow;
+    border: 35px solid rgb(255, 243, 130);
     background-color: aliceblue;
 }
 
@@ -14,12 +19,30 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-
 }
-@media (min-width: 1200px){
+
+.presentation {
+    margin-top: 20px;
+    padding-right: 200px;
+    padding-left: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1200px) {
     .container {
-    width: 1170px;
+        width: 1170px;
     }
+}
+
+.cursorSize {
+    font-size: 75px;
+}
+
+.wrapperClass {
+    font-size: 5vh;
+    height: 75px;
+    font-family: Gilbert;
 }
 
 nav {
@@ -30,27 +53,34 @@ nav {
     border-radius: 20px;
     align-items: center;
     box-shadow: 3px 8px 6px 0px #828282;
-  }
-  .left-item {
+}
+
+.left-item {
     float: left;
-  }
-  .middle-items {
+}
+
+.middle-items {
     display: flex;
     justify-content: center;
-  }
-  .right-items {
-    background-color: rgb(255, 0, 0);
+}
+
+.right-items {
+    background-color: rgb(255, 243, 130);
     border-radius: 20px;
     padding: 5px;
-  }
-  
-  a {
+}
+
+a {
     padding-left: 5px;
     text-decoration: none;
     color: black;
-  }
-  a:hover {
+}
+
+a:hover {
     color: #828282;
-  }
-  
-  
+}
+
+.yl {
+    font-size: 6vh;
+    background-color: rgb(255, 243, 130);
+}

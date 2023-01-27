@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style-portfolio.css">
     <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js" integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -15,16 +17,19 @@
                 <a href="#">Home</a>
                 <a href="#">CV</a>
                 <a href="#">A propos</a>
-           
+
             </div>
             <div class="middle-items">
                 <a href="#">Linkedin</a>
                 <a href="#">Github</a>
             </div>
-            <div >
-              <div class="right-items">Right 1</div>
+            <div>
+                <div class="right-items">Right 1</div>
             </div>
-          </nav>
+        </nav>
+        <div class="presentation">
+            <div id="pc"></div>
+        </div>
         <p>p</p>
         <p>p</p>
         <p>p</p>
@@ -33,4 +38,25 @@
         <p>p</p>
     </div>
 </body>
+
 </html>
+<script>
+    var pc = document.getElementById('pc');
+
+    var typewriter2 = new Typewriter(pc, {
+        loop: true,
+        cursorClassName: 'cursorSize',
+        wrapperClassName: 'wrapperClass'
+    });
+
+
+    typewriter2.typeString("<a class='yl'>Hi</a>, I'm Arthur")
+        .pauseFor(2500)
+        .deleteChars(10)
+        .typeString("I'm <strong>junior</strong> developper")
+        .pauseFor(2500)
+        .deleteChars(21)
+        .typeString("Contact me on <a href='https://fr.linkedin.com/in/arthur-bergere-b26336205' title='LinkedIn' >Linkedin</a>")
+        .pauseFor(10000)
+        .start();
+</script>
