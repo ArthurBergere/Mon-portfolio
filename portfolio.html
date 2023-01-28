@@ -28,7 +28,16 @@
             </div>
         </nav>
         <div class="presentation">
-            <div id="pc"></div>
+            <div class="middle">
+                <img src="./CONTENT/world-removebg-preview.png">
+            </div>
+            <div>
+                <div id="pc"></div>
+                <div id="app"></div>
+            </div>
+            <div class="middle">
+                <img src="./CONTENT/terre.png">
+            </div>
         </div>
         <p>p</p>
         <p>p</p>
@@ -50,13 +59,32 @@
     });
 
 
-    typewriter2.typeString("<a class='yl'>Hi</a>, I'm Arthur")
+    typewriter2.typeString("<a class='yl'>Hi, I'm Arthur</a>")
         .pauseFor(2500)
-        .deleteChars(10)
-        .typeString("I'm <strong>junior</strong> developper")
+        // .deleteChars(10)
+        // .typeString("I'm <strong>junior</strong> developper")
+        // .pauseFor(2500)
+        // .deleteChars(21)
+        // .typeString("Contact me on <a href='https://fr.linkedin.com/in/arthur-bergere-b26336205' title='LinkedIn' >Linkedin</a>")
+        .pauseFor(20000)
+        .start();
+
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+        cursorClassName: 'cursorSize',
+        wrapperClassName: 'wrapperClass'
+    });
+
+
+    typewriter.pauseFor(2500).typeString("a junior developper")
         .pauseFor(2500)
-        .deleteChars(21)
+        .deleteAll()
+        .typeString("work-study at hutchinson")
+        .pauseFor(2500)
+        .deleteAll(21)
         .typeString("Contact me on <a href='https://fr.linkedin.com/in/arthur-bergere-b26336205' title='LinkedIn' >Linkedin</a>")
-        .pauseFor(10000)
+        .pauseFor(20000)
         .start();
 </script>

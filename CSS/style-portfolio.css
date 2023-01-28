@@ -9,7 +9,7 @@
 }
 
 body {
-    border: 35px solid rgb(255, 243, 130);
+    border: 35px solid #FFEF5C;
     background-color: aliceblue;
 }
 
@@ -21,12 +21,30 @@ body {
     margin-left: auto;
 }
 
-.presentation {
+.middle img {
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+}
+
+
+/* .presentation {
     margin-top: 20px;
     padding-right: 200px;
     padding-left: 250px;
     margin-right: auto;
     margin-left: auto;
+} */
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center
 }
 
 @media (min-width: 1200px) {
@@ -36,7 +54,8 @@ body {
 }
 
 .cursorSize {
-    font-size: 75px;
+    font-size: 50px;
+    animation: Typewriter-cursor 2s infinite;
 }
 
 .wrapperClass {
@@ -53,6 +72,7 @@ nav {
     border-radius: 20px;
     align-items: center;
     box-shadow: 3px 8px 6px 0px #828282;
+    margin-bottom: 5%;
 }
 
 .left-item {
@@ -65,7 +85,7 @@ nav {
 }
 
 .right-items {
-    background-color: rgb(255, 243, 130);
+    background-color: #FFEF5C;
     border-radius: 20px;
     padding: 5px;
 }
@@ -82,5 +102,6 @@ a:hover {
 
 .yl {
     font-size: 6vh;
-    background-color: rgb(255, 243, 130);
+    padding: 10px;
+    background-color: #FFEF5C;
 }
