@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -8,6 +9,7 @@
     src: url(../CONTENT/GilbertQualifiDemo.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
 body {
     border: 35px solid #FFEF5C;
     background-color: aliceblue;
@@ -29,6 +31,28 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     height: 50px;
+}
+
+.mt {
+    margin-top: 10%;
+}
+
+.mt a {
+    color: #690975;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 50px;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 25px;
+    box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -75,8 +99,66 @@ nav {
     margin-bottom: 5%;
 }
 
+.row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectcard {
+    background-color: #fff;
+    width: 65%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 8px 6px 0px #828282;
+}
+
+.projectcard img {
+    width: 70%;
+    background-color: aliceblue;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.projectcardtitre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectcardtitre svg {
+    height: 20px;
+}
+
+.projecttextcard {
+    padding: 25px;
+}
+
+.mesprojets {
+    box-shadow: 3px 8px 6px 0px #828282;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 30%;
+    letter-spacing: 15px;
+    font-size: 2em;
+}
+
+.contact {
+    border-left: 2px rgb(202, 202, 202) solid;
+    padding-left: 25px;
+    margin-left: 50px;
+}
+
+.left-item a {
+    margin-left: 10px;
+}
+
 .left-item {
     float: left;
+    display: flex;
 }
 
 .middle-items {
