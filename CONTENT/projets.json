@@ -1,0 +1,18 @@
+{
+    "projets" : [
+      {
+      "titre":"Campus la Mouillère",
+      "href":"https://campuslamouillere.fr",
+      "titre4":"Réalisation d'un nouveau site vitrine pour le campus la mouillère.",
+      "img":"http://www.arthurbergere.com/images/campus.png",
+      "alt":"Photo du site vitrine campus la mouillère"
+    },
+      {
+      "titre":"Kaminstrumentale",
+      "href":"https://kaminstrumentale.com",
+      "titre4":"Réalisation d'un nouveau site vitrine pour le campus la mouillère.",
+      "img":"http://www.arthurbergere.com/images/campus.png",
+      "alt":"Photo du site de kaminstrumentale"
+    }
+    ]
+  }
