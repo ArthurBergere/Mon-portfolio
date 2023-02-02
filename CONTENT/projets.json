@@ -5,14 +5,73 @@
       "href":"https://campuslamouillere.fr",
       "titre4":"Réalisation d'un nouveau site vitrine pour le campus la mouillère.",
       "img":"http://www.arthurbergere.com/images/campus.png",
-      "alt":"Photo du site vitrine campus la mouillère"
+      "alt":"Photo du site vitrine campus la mouillère",
+      "skills": [
+        "Web Design","CMS WordPress avec Elementor",
+        "Gestion d'une architecture de site vitrine",
+        "Savoir bien définir les besoins d'un client"
+      ]
+
     },
       {
       "titre":"Kaminstrumentale",
       "href":"https://kaminstrumentale.com",
-      "titre4":"Réalisation d'un nouveau site vitrine pour le campus la mouillère.",
-      "img":"http://www.arthurbergere.com/images/campus.png",
-      "alt":"Photo du site de kaminstrumentale"
-    }
+      "titre4":"Projet réalisé avec Donnez Mathis et Bernoussi Tarek. Un site pour rapper sur des instrus aléatoires avec la possibilité d'enregistrer ses textes.",
+      "img":"https://arthurbergere.com/images/kam.png",
+      "alt":"Photo du site de kaminstrumentale",
+      "skills": [
+        "Web Design","Travail en groupe",
+        "Développement php",
+        "Utiliser une API (Youtube API)",
+        "Gérer des connections utilisateurs",
+        "Javascript"
+      ]
+    },
+      {
+      "titre":"DVDtèque",
+      "href":"http://arthurbergere.com/film/",
+      "titre4":"Un site créé pour mon frère en situation de handicap qui possède beaucoup de dvd, ce site lui permet d'ajouter ses dvd et de les consulter.",
+      "img":"https://arthurbergere.com/images/filmdvd.png",
+      "alt":"Photo du site de dvdtèque",
+      "skills": [
+        "Web Design","Gestion de card",
+        "Base de donné MariaDB",
+        "Php & Javascript",
+        "Gérer des connections utilisateurs",
+        "Design accessible pour personne en situation de handicap"
+      ]
+    },
+    {
+    "titre":"Snake Master",
+    "href":"http://arthurbergere.com/snake/",
+    "titre4":"Crée avec Mathis DONNEZ, ce projet a été réalisé pendant la Nuit de l'info. Le but était de réaliser un site web fonctionnel mais en codant de la pire manière possible.",
+    "img":"https://arthurbergere.com/images/snake-master.png",
+    "alt":"Photo du site de Snake Master",
+    "skills": [
+      "Apprentissage Html & Css","Travail en équipe",
+      "Coder pendant toute une nuit"
+    ]
+  },
+  {
+  "titre":"Lecteur Lofi",
+  "href":"http://arthurbergere.com/lofi/public/",
+  "titre4":"Lecteur de musique dans le style Lofi",
+  "img":"https://arthurbergere.com/images/lofi.png",
+  "alt":"Photo du site Lofi player",
+  "skills": [
+    "Javascript","Gestion musique (pause,play,time)"
+  ]
+}
+,
+  {
+  "titre":"Draw It",
+  "href":"http://arthurbergere.com/draw/",
+  "titre4":"Juste un petit site pour dessiner",
+  "img":"https://arthurbergere.com/images/draw.png",
+  "alt":"Photo du site de DrawIt",
+  "skills": [
+    "Apprentissage des canva en JS"
+  ]
+}
     ]
   }
