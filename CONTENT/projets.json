@@ -1,6 +1,32 @@
 {
     "projets" : [
       {
+        "titre":"Gestionnaire électronique de documents",
+        "href":"#",
+        "titre4":"Réalisation d'une moteur de recherche pour document, avec Elasticsearch.",
+        "img":"https://arthurbergere.com/images/hutchinson.png",
+        "alt":"Photo logo hutchinson",
+        "skills": [
+          "Mise en place d'un serveur elasticsearch","Indexation de document automatique",
+          "Développement C# .net",
+          "Gestion des droits avec Authorize", "Gestions des rôles avec Claimstransformer","Bootstrap"
+        ]
+  
+      },
+      {
+      "titre":"Application Interventions",
+      "href":"#",
+      "titre4":"Réalisation d'un tableau d'interventions avec différents champs en Angular.",
+      "img":"https://arthurbergere.com/images/hutchinson.png",
+      "alt":"Photo logo hutchinson",
+      "skills": [
+        "Développemnt Angular avec C# web API","Formulaire réactif Angular",
+        "Typescript",
+        "Utilisation de KendoUI"
+      ]
+
+    },
+      {
       "titre":"Campus la Mouillère",
       "href":"https://campuslamouillere.fr",
       "titre4":"Réalisation d'un nouveau site vitrine pour le campus la mouillère.",
