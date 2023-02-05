@@ -71,29 +71,29 @@ body {
     align-items: center
 }
 
+
 /* @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 } */
 
-@media  (min-width: 992px) and (max-width: 1100px)  {
-    
-    .mesprojets {
-        font-size: 1.5em !important;
-        width: 30% !important;
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
     }
-    .projectcard{
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .projectcard {
         width: 65% !important;
     }
     .row {
-        height: 400px  !important;
+        height: 400px !important;
     }
 }
-@media (min-width: 400px) and (max-width: 750px)  {
-    .mesprojets {
-        font-size: 1em !important;
-    }
+
+@media (min-width: 400px) and (max-width: 750px) {
     .first {
         display: none;
     }
@@ -101,16 +101,14 @@ body {
         font-size: 0.6em !important;
         width: 85% !important;
     }
-    .projectcard{
+    .projectcard {
         width: 85% !important;
     }
-    .projectcard h1{
+    .projectcard h1 {
         font-size: 1em !important;
-        
     }
-    .projectcard h4{
+    .projectcard h4 {
         font-size: 0.6em !important;
-        
     }
     .row {
         display: block !important;
@@ -119,35 +117,28 @@ body {
     #portfolio {
         display: flex !important;
         flex-wrap: wrap;
-        flex-direction: row !important ;
+        flex-direction: row !important;
     }
-
 }
-@media  (min-width: 750px) and (max-width: 992px)  {
-    
-    .mesprojets {
-        font-size: 1em !important;
-        width: 30% !important;
-    }
+
+@media (min-width: 750px) and (max-width: 992px) {
     .card2 {
         font-size: 0.8em !important;
     }
-    .projectcard{
+    .projectcard {
         width: 62% !important;
-
     }
-    .projectcard h1{
+    .projectcard h1 {
         font-size: 1.5em !important;
-        
     }
-    .projectcard h4{
+    .projectcard h4 {
         font-size: 0.9em !important;
-        
     }
     .row {
-        height: 400px  !important;
+        height: 400px !important;
     }
 }
+
 .cursorSize {
     font-size: 50px;
     animation: Typewriter-cursor 2s infinite;
@@ -198,12 +189,15 @@ nav {
 .projectcardtitre svg {
     height: 20px;
 }
+
 .paddingtext {
     padding: 20px;
 }
+
 .projecttextcard {
     height: 30%;
 }
+
 .card1img {
     background-color: aliceblue;
     border-radius: 5px;
@@ -212,13 +206,13 @@ nav {
     justify-content: center;
     height: 70%;
 }
+
 .mesprojets {
     box-shadow: 3px 8px 6px 0px #828282;
     background-color: black;
     color: white;
     padding: 10px;
     border-radius: 20px;
-    width: 30%;
     letter-spacing: 15px;
     font-size: 2em;
 }
@@ -230,23 +224,28 @@ nav {
     border-radius: 20px;
     box-shadow: 3px 8px 6px 0px #828282;
 }
+
 .card2 .middle {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
 }
+
 .card2 .middle img {
     border: 1px solid black;
 }
+
 .card2text {
     background-color: aliceblue;
-    height:70%;
+    height: 70%;
     border-radius: 5px;
 }
+
 .card2text * {
     padding-left: 10px;
 }
+
 .contact {
     border-left: 2px rgb(202, 202, 202) solid;
     padding-left: 25px;
@@ -287,4 +286,62 @@ a:hover {
     font-size: 6vh;
     padding: 10px;
     background-color: #FFEF5C;
+}
+
+.card {
+    background: #353535;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 10px 15px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#FFEF5C, aliceblue);
+}
+
+.card:hover>.img {
+    transition: 0.5s ease-in-out;
+    background: linear-gradient( aliceblue, #FFEF5C);
+}
+
+.textBox {
+    width: calc(100% - 90px);
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span {
+    font-size: 10px;
+}
+
+.h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 1em;
+    font-weight: lighter;
+    padding-bottom: 5px;
 }

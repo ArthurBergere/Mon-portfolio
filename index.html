@@ -7,12 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style-portfolio.css">
     <title>Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js"
-        integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js" integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -20,14 +16,14 @@
         <nav>
             <div class="left-item">
                 <a href="#">Home</a>
-                <a href="#">CV</a>
+                <a target="_blank" href="./CONTENT/CV_pour_web.pdf">CV</a>
                 <a href="#">A propos</a>
 
                 <!-- </div>
             <div class="middle-items"> -->
                 <div class="contact">
-                    <a href="#">Linkedin</a>
-                    <a href="#">Github</a>
+                    <a target="_blank" href="https://fr.linkedin.com/in/arthur-bergere-b26336205">Linkedin</a>
+                    <a target="_blank" href="https://github.com/ArthurBergere">Github</a>
                 </div>
 
             </div>
@@ -43,8 +39,7 @@
                 <div id="pc"></div>
                 <div id="app"></div>
                 <div class="mt">
-                    <p>Actuellement étudiant en<a
-                            href="https://www.cesi.fr/wp-content/uploads/2023/01/FichesFiche-Programme-Detaillee-2417421.pdf">Bachelor
+                    <p>Actuellement étudiant en<a href="https://www.cesi.fr/wp-content/uploads/2023/01/FichesFiche-Programme-Detaillee-2417421.pdf">Bachelor
                             Concepteur d'Application au CESI.</a></p>
                 </div>
             </div>
@@ -63,12 +58,27 @@
                 <h1>+2</h1>Titulaire d'un bac +2
             </div>
         </div>
-        <div class="row">
-
-            <div class="mesprojets">
-                <h1>Mes <br>projets</h1>
+        <!-- <div class="mesprojets">
+            <h1>Mes projets</h1>
+        </div> -->
+        <div class="card">
+            <div class="img">
+                <svg style="color: #353535;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
             </div>
-            <div class="projectcard first">
+            <div class="textBox">
+                <div class="textContent">
+                    <p class="h1">Mes projets</p>
+                    <span class="span"></span>
+                </div>
+                <p class="p">Une liste de quelques projets que j'ai réalisé !</p>
+                <div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="projectcard first">
                 <div class="projecttextcard">
                     <div class="projectcardtitre">
                         <h1>Campus la Mouillère</h1>
@@ -89,7 +99,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> -->
         <!-- <div class="row">
             <div class="projectcard">
                 <div class="projecttextcard">
@@ -135,25 +145,24 @@
 
 </html>
 <script>
-
-    $(document).ready(function () {
+    $(document).ready(function() {
         const terre = "./CONTENT/terre.png";
         const monde = "./CONTENT/world-removebg-preview.png";
         let portfolio = document.getElementById("portfolio");
         $.ajax({
-            //L'URL de la requête 
-            url: "./CONTENT/projets.json",
+                //L'URL de la requête 
+                url: "./CONTENT/projets.json",
 
-            //La méthode d'envoi (type de requête)
-            method: "GET",
+                //La méthode d'envoi (type de requête)
+                method: "GET",
 
-            //Le format de réponse attendu
-            dataType: "json",
-        })
+                //Le format de réponse attendu
+                dataType: "json",
+            })
             //Ce code sera exécuté en cas de succès - La réponse du serveur est passée à done()
             /*On peut par exemple convertir cette réponse en chaine JSON et insérer
              * cette chaine dans un div id="res"*/
-            .done(function (response) {
+            .done(function(response) {
                 //let data = JSON.stringify(response);
                 //console.log(data)
                 console.log(response.projets)
@@ -201,8 +210,7 @@
 
                         row.appendChild(projectcard)
                         imgpres.setAttribute("src", monde)
-                    }
-                    else {
+                    } else {
                         row.appendChild(projectcard)
 
                         row.appendChild(card2)
@@ -248,11 +256,11 @@
 
             })
 
-            //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
-            //On peut afficher les informations relatives à la requête et à l'erreur
-            .fail(function (error) {
-                alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
-            })
+        //Ce code sera exécuté en cas d'échec - L'erreur est passée à fail()
+        //On peut afficher les informations relatives à la requête et à l'erreur
+        .fail(function(error) {
+            alert("La requête s'est terminée en échec. Infos : " + JSON.stringify(error));
+        })
 
         // //Ce code sera exécuté que la requête soit un succès ou un échec
         // .always(function(){
