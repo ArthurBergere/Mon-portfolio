@@ -15,6 +15,20 @@ body {
     background-color: aliceblue;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 .container {
     margin-top: 20px;
     padding-right: 15px;
@@ -93,8 +107,87 @@ body {
     }
 }
 
-@media (min-width: 400px) and (max-width: 750px) {
-    .first {
+@media (max-width: 620px) {
+    .middle {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block !important;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    .left-item {
+        float: left;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        border-left: 0px !important;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+        flex-direction: column;
+        display: flex;
+    }
+    .left-item {
+        width: 50%;
+    }
+    .nav {
+        text-align: center;
+        flex-direction: column;
+        position: fixed;
+        width: 86%;
+        left: -100%;
+        z-index: 45;
+    }
+    .nav.active {
+        left: 5%;
+        top: 10%;
+    }
+    .nav-link {
+        padding: 5px;
+        border-bottom: 1px solid gainsboro;
+    }
+    .wrapperClass {
+        font-size: 3vh !important;
+    }
+    .statdiv h1 {
+        font-size: 2em !important;
+    }
+    .statdiv {
+        font-size: 10px;
+    }
+    .cursorSize {
+        font-size: 35px !important;
+    }
+    .yl {
+        font-size: 4vh !important;
+    }
+    .middle img {
+        height: 25px;
+    }
+    .contact .nav-link:nth-child(2) {
+        padding: 5px;
+        border-bottom: none !important;
+    }
+    /* .stat {
+        flex-direction: column;
+    } */
+    .right-items {
+        display: none;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* .first {
         display: none;
     }
     .card2 {
@@ -118,6 +211,12 @@ body {
         display: flex !important;
         flex-wrap: wrap;
         flex-direction: row !important;
+    } */
+    #portfolio {
+        display: none;
+    }
+    .card {
+        display: none !important;
     }
 }
 
@@ -150,7 +249,7 @@ body {
     font-family: Gilbert;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
@@ -344,4 +443,18 @@ a:hover {
     font-size: 1em;
     font-weight: lighter;
     padding-bottom: 5px;
+}
+
+footer {
+    padding: 10%;
+    text-align: center;
+    color: rgb(92, 92, 92) !important;
+}
+
+footer a {
+    color: rgb(167, 150, 3) !important;
+}
+
+.cp-text {
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
 }

@@ -14,21 +14,28 @@
 <body>
     <div class="container">
         <nav>
-            <div class="left-item">
-                <a href="#">Home</a>
-                <a target="_blank" href="./CONTENT/CV_pour_web.pdf">CV</a>
-                <a href="#">A propos</a>
+            <div class="nav">
+                <div class="left-item">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" target="_blank" href="./CONTENT/CV_pour_web.pdf">CV</a>
+                    <a class="nav-link" href="#">A propos</a>
 
-                <!-- </div>
+                    <!-- </div>
             <div class="middle-items"> -->
-                <div class="contact">
-                    <a target="_blank" href="https://fr.linkedin.com/in/arthur-bergere-b26336205">Linkedin</a>
-                    <a target="_blank" href="https://github.com/ArthurBergere">Github</a>
-                </div>
+                    <div class="contact">
+                        <a class="nav-link" target="_blank" href="https://fr.linkedin.com/in/arthur-bergere-b26336205">Linkedin</a>
+                        <a class="nav-link" target="_blank" href="https://github.com/ArthurBergere">Github</a>
+                    </div>
 
+                </div>
+                <div>
+                    <div class="right-items">Right 1</div>
+                </div>
             </div>
-            <div>
-                <div class="right-items">Right 1</div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
         <div class="presentation">
@@ -48,13 +55,13 @@
             </div>
         </div>
         <div class="stat">
-            <div>
+            <div class="statdiv">
                 <h1>1</h1> an d'expérience en entreprise
             </div>
-            <div>
+            <div class="statdiv">
                 <h1>2</h1> stages en entreprise
             </div>
-            <div>
+            <div class="statdiv">
                 <h1>+2</h1>Titulaire d'un bac +2
             </div>
         </div>
@@ -141,6 +148,14 @@
 
         </div>
     </div>
+    <footer>
+        <a target="_blank" href="https://dribbble.com/shots/20196614-Flowbase-Atlantis-Portfolio-Template?utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share">La référence du design</a>
+
+        <p class="cp-text">
+
+            © Copyright 2023 BERGERE Arthur. All rights reserved.
+        </p>
+    </footer>
 </body>
 
 </html>
@@ -309,4 +324,22 @@
         .typeString("Contact me on <a href='https://fr.linkedin.com/in/arthur-bergere-b26336205' title='LinkedIn' >Linkedin</a>")
         .pauseFor(20000)
         .start();
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
 </script>
