@@ -12,7 +12,7 @@ html {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spline+Sans&display=swap');
-body {
+#body {
     border: 35px solid #FFEF5C;
     background-color: aliceblue;
 }
@@ -114,7 +114,7 @@ body {
     .middle {
         display: none;
     }
-    body {
+    #body {
       border: 5px solid #FFEF5C !important;
     }
     #apropos p {
@@ -123,9 +123,23 @@ body {
     .nav.active {
       top: 21% !important;
     }
+    #barre p {
+        font-size: 12px !important;
+    }
+    #fermer {
+        width: 30px !important;
+        height: 30px !important;
+    }
 }
 
 @media (max-width: 750px) {
+    #barre p {
+        font-size: 15px;
+    }
+    #fermer {
+        width: 30px !important;
+        height: 30px !important;
+    }
     .hamburger {
         display: block !important;
         cursor: pointer;
@@ -233,6 +247,10 @@ body {
 }
 
 @media (min-width: 750px) and (max-width: 992px) {
+    #fermer {
+        width: 30px !important;
+        height: 30px !important;
+    }
     .card2 {
         font-size: 0.8em !important;
     }
@@ -489,3 +507,33 @@ footer a {
   border-radius: 10px;
 }
 
+#barre {
+    width: 100%;
+    background:#d62626;
+    padding:8px 0;
+    font-family:  "Trebuchet MS";
+    text-align: center;
+    font-size:19px;
+    margin-top:-50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #2e1b27;
+}
+#barre p {
+    margin-left: auto;
+}
+#fermer {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 30px;
+}
+ 
+#fermer:hover {
+/* J'utilise un gif en :hover pour animer la croix de fermeture */
+    background: url(../img/fermer.gif);
+}
