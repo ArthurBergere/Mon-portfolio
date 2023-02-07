@@ -113,6 +113,9 @@ body {
     .middle {
         display: none;
     }
+    body {
+      border: 5px solid #FFEF5C !important;
+    }
 }
 
 @media (max-width: 750px) {
