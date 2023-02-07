@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
     font-family: Gilbert;
     src: url(../CONTENT/GilbertQualifiDemo.ttf);
@@ -187,15 +189,16 @@ body {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    /* .first {
+    .first {
         display: none;
     }
     .card2 {
-        font-size: 0.6em !important;
-        width: 85% !important;
+      display: none;
+        /* font-size: 0.6em !important;
+        width: 85% !important; */
     }
     .projectcard {
-        width: 85% !important;
+        width: 100% !important;
     }
     .projectcard h1 {
         font-size: 1em !important;
@@ -204,17 +207,18 @@ body {
         font-size: 0.6em !important;
     }
     .row {
-        display: block !important;
-        width: 33% !important;
+        margin-top: 5%;
+        height: 250px;
     }
     #portfolio {
         display: flex !important;
         flex-wrap: wrap;
         flex-direction: row !important;
-    } */
-    #portfolio {
-        display: none;
     }
+
+    /* #portfolio {
+        display: none;
+    } */
     .card {
         display: none !important;
     }
@@ -458,3 +462,22 @@ footer a {
 .cp-text {
     text-shadow: 0 1px rgba(255, 255, 255, 0.1);
 }
+
+.apropos {
+  margin-top: 10%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 3px 8px 6px 0px #828282;
+  text-align : justify;
+  line-height: 1.5em;
+}
+#apropos{
+  padding: 20px;
+}
+#apropos p {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+
