@@ -107,6 +107,7 @@ body {
     .row {
         height: 400px !important;
     }
+    
 }
 
 @media (max-width: 620px) {
@@ -115,6 +116,12 @@ body {
     }
     body {
       border: 5px solid #FFEF5C !important;
+    }
+    #apropos p {
+      font-size: 13px;
+    }
+    .nav.active {
+      top: 20% !important;
     }
 }
 
@@ -148,8 +155,9 @@ body {
         z-index: 45;
     }
     .nav.active {
-        left: 5%;
-        top: 10%;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .nav-link {
         padding: 5px;
