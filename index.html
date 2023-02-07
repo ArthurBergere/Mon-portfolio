@@ -189,14 +189,14 @@
             .done(function(response) {
                 //let data = JSON.stringify(response);
                 //console.log(data)
-                console.log(response.projets)
+                //console.log(response.projets)
                 for (var i = 0; i < response.projets.length; i++) {
                     const iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
                     const iconPath = document.createElementNS(
                         'http://www.w3.org/2000/svg',
                         'path'
                     );
-                    console.log(i, i % 2)
+                    // console.log(i, i % 2)
                     iconSvg.setAttribute('fill', 'none');
                     iconSvg.setAttribute('viewBox', '0 0 24 24');
                     iconSvg.setAttribute('stroke', 'currentColor');
@@ -274,7 +274,7 @@
                         const li = document.createElement("li");
                         li.innerHTML = response.projets[i].skills[j];
                         card2text.appendChild(li)
-                        console.log(response.projets[i].skills[j])
+                        //console.log(response.projets[i].skills[j])
                     }
                 }
 
