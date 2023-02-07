@@ -87,8 +87,17 @@
   "skills": [
     "Javascript","Gestion musique (pause,play,time)"
   ]
-}
-,
+},
+{
+"titre":"Veille Kotlin Java",
+"href":"http://arthurbergere.com/veille/",
+"titre4":"Veille technologique ",
+"img":"./CONTENT/veille.png",
+"alt":"Photo du site de veille technologique",
+"skills": [
+  "Utiliser les flux RSS"
+]
+},
   {
   "titre":"Draw It",
   "href":"http://arthurbergere.com/draw/",
