@@ -117,6 +117,7 @@ html {
     #body {
       border: 5px solid #FFEF5C !important;
     }
+    
     #apropos p {
       font-size: 13px;
     }
@@ -126,9 +127,12 @@ html {
     #barre p {
         font-size: 12px !important;
     }
+
     #fermer {
         width: 30px !important;
         height: 30px !important;
+        margin-right:0 !important ;
+
     }
 }
 
@@ -533,7 +537,3 @@ footer a {
     margin-right: 30px;
 }
  
-#fermer:hover {
-/* J'utilise un gif en :hover pour animer la croix de fermeture */
-    background: url(../img/fermer.gif);
-}
