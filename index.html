@@ -170,7 +170,7 @@
             </div>
         </div>
         <footer>
-            <a target="_blank" href="https://dribbble.com/shots/20196614-Flowbase-Atlantis-Portfolio-Template?utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share">La référence du design</a>
+            <a target="_blank" href="https://dribbble.com/shots/20196614-Flowbase-Atlantis-Portfolio-Template?utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=batuhankara&utm_content=Flowbase%3A%20Atlantis%20Portfolio%20Template&utm_medium=Social_Share">L'inspiration du design</a>
 
             <p class="cp-text">
 
@@ -251,11 +251,15 @@
                     const h1 = document.createElement("h1");
                     const h12 = document.createElement("h1");
                     const a = document.createElement("a");
+                    const aImg = document.createElement("a");
                     const br = document.createElement("br");
                     const h4 = document.createElement("h4");
                     const img = document.createElement("img");
                     const imgpres = document.createElement("img");
-                    a.setAttribute("href", response.projets[i].href, "target", "_blank")
+                    a.setAttribute("href", response.projets[i].href)
+                    a.setAttribute("target", "_blank")
+                    aImg.setAttribute("href", response.projets[i].href, "target", "_blank")
+                    aImg.setAttribute("target", "_blank")
                     img.setAttribute("src", response.projets[i].img, "alt", response.projets[i].alt)
                     row.setAttribute('data-aos', 'fade-up');
                     if (i % 2 == 0) {
@@ -292,7 +296,8 @@
                     paddingtext.appendChild(br)
                     paddingtext.appendChild(h4)
                     projectcard.appendChild(card1img)
-                    card1img.appendChild(img)
+                    card1img.appendChild(aImg)
+                    aImg.appendChild(img)
                     a.appendChild(iconSvg)
                     projectcardtitre.appendChild(a)
                     card2.appendChild(middle)

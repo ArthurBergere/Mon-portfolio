@@ -65,6 +65,10 @@ html {
     color: #690975;
 }
 
+.mt a:hover {
+    color: #680975b6;
+}
+
 .stat {
     display: flex;
     justify-content: space-around;
@@ -311,7 +315,7 @@ html {
 }
 
 .projectcard {
-    background-image: linear-gradient(to top, #d5d4d0 0%, eeeeec 100%);
+    background-image: linear-gradient(to top, #d5d4d0 0%, #efeeec 100%);
     width: 65%;
     padding: 10px;
     border-radius: 20px;
@@ -342,6 +346,7 @@ html {
 
 .card1img {
     border-radius: 5px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -418,7 +423,7 @@ a {
     color: black;
 }
 
-a:hover {
+.nav a:hover {
     color: #828282;
 }
 
@@ -566,5 +571,5 @@ footer a {
 }
 
 svg.w-6.h-6 {
-    color: var(--color-bg);
+    color: black;
 }
